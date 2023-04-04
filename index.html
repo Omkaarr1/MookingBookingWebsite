@@ -424,61 +424,61 @@
         var username = $("#username-login").val();
         var password = $("#password-login").val();
 
-        // var x = new XMLHttpRequest();
-        // x.open('GET', 'data.json');
-        // x.onload = () => {
-        //   var y;
-        //   var flag = 0;
-        //   var c = 0;
+        var x = new XMLHttpRequest();
+        x.open('GET', 'data.json');
+        x.onload = () => {
+          var y;
+          var flag = 0;
+          var c = 0;
 
-        //   y = JSON.parse(x.response);
+          y = JSON.parse(x.response);
 
-        //   for (i in y) {
-        //     if (y[c].username === username) {
-        //       if (y[c].Password === password)
-        //         flag = 0;
-        //       else
-        //         flag = 1;
-        //     }
-        //     else
-        //       flag = -1;
+          for (i in y) {
+            if (y[c].username === username) {
+              if (y[c].Password === password)
+                flag = 0;
+              else
+                flag = 1;
+            }
+            else
+              flag = -1;
 
-        //     if (flag === 0)
-        //       break;
-        //     c++;
-        //   }
+            if (flag === 0)
+              break;
+            c++;
+          }
 
-        //   if (flag === -1) {
-        //     alert("User not found");
-        //     return;
-        //   }
-        //   else if (flag === 1) {
-        //     alert("Incorrect Password");
-        //     return;
-        //   }
-        //   else {
-        //     alert("Login Successfull");
-        //     window.open("home.html", "_self");
-        //   }
-        // };
-        // x.send();
+          if (flag === -1) {
+            alert("User not found");
+            return;
+          }
+          else if (flag === 1) {
+            alert("Incorrect Password");
+            return;
+          }
+          else {
+            alert("Login Successfull");
+            window.open("home.html", "_self");
+          }
+        };
+        x.send();
 
         var data = {
           "username":username,
           "password":password
         }
 
-        $.ajax({
-            url: '/checkRequest',
-            type: 'PUT',
-            contentType: "application/JSON",
-            data: JSON.stringify(data),
-            dataType: 'JSON',
-            success: function (err,result) {
-              // console.log();
-                window.open(result);
-            }
-        });
+//         $.ajax({
+//             url: '/checkRequest',
+//             type: 'PUT',
+//             contentType: "application/JSON",
+//             data: JSON.stringify(data),
+//             dataType: 'JSON',
+//             success: function (err,result) {
+//               // console.log();
+//                 window.open(result);
+//             }
+//         });
       });
 
       $("#goRight").click(() => {
