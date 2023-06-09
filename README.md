@@ -41,4 +41,13 @@ CineBook is an advanced movie booking website that revolutionizes the way users 
 
  Use this information for management and analysis purposes.
 
+Instructions (Avoid any _Deceptive site ahead_ warnings):
+1. Use Default login to access website as: Username: **admin** Password: **admin**.
+2. After login you can choose your movie or choose for Admin login.
+3. If you choose admin login, use email: **admin@gmail.com** password: **admin**.
+4. If not, choose the movie.
+5. You'll be redirected to Seat Selection Page, select your seates.
+6. Next up fill in your Credit Card/Debit card details (Use _Generate Random_ button) {**Name is Must**}.
+7. Finally when you click pay now your ticket is booked and you'll see the thankyou page.
+
 _CineBook simplifies movie ticket booking with its modern technology stack and user-friendly interface. Enjoy the convenience of secure account management, seat selection, and online payments, all while ensuring the privacy of user data._
